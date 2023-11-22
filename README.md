@@ -61,7 +61,7 @@ Two separate Flask applications, located in folders flask1 and flask2, were Dock
   templates: Created a templates folder containing an index.html file for the Flask application in flask2
 
 ### Dockerfile Configuration
-There is a Dockerfile located in each of the two folders with the following code
+There is a Dockerfile located in each of the two folders with the following code:
 ```
 FROM python:3.7-alpine
 WORKDIR /app
@@ -92,6 +92,25 @@ services:              # Defines services that constitute the application (flask
       - "5002:5000"
     volumes:           # Maps the directory of the application in the container
       - ./flask2:/app
+```
+
+### Docker Compose Commands
+To build and run the multi-container setup, use the following commands:
+```
+# Navigate to the directory containing docker-compose.yaml
+cd <path-to-directory>
+
+# Build the Docker images and start the containers
+docker-compose up -d
+```
+
+To manage containers, use the following commands:
+```
+# View running containers
+docker ps
+
+# Stop the running containers
+docker-compose down
 ```
 
 
