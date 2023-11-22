@@ -41,4 +41,28 @@ CMD ["python", "app.py"]
 
 
 # 2. Multi-Container Setup with Docker Compose
+### Setting up the Application and Folder Structure 
+Two separate Flask applications, located in folders flask1 and flask2, were Dockerized along with their respective templates, app.py, requirements.txt, and Dockerfile.
+- Flask1
+
+  app.py: Developed the main app.py Flask application script for the first container
+
+  requirements.txt: Defined the Python dependencies for the Flask application in flask1
+
+  templates: Created a templates folder containing an index.html file for the Flask application in flask1
+
+  Dockerfile: Created a Dockerfile for containerizing the Flask application in flask1
+
+  
+- Flask2
+- 
+  app.py: Developed the main app.py Flask application script for the first container
+
+  requirements.txt: Defined the Python dependencies for the Flask application in flask2
+
+  templates: Created a templates folder containing an index.html file for the Flask application in flask2
+
+  Dockerfile: Created a Dockerfile for containerizing the Flask application in flask2
+
+  
 
