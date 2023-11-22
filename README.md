@@ -51,8 +51,6 @@ Two separate Flask applications, located in folders flask1 and flask2, were Dock
 
   templates: Created a templates folder containing an index.html file for the Flask application in flask1
 
-  Dockerfile: Created a Dockerfile for containerizing the Flask application in flask1
-
   
 - Flask2
   
@@ -62,7 +60,17 @@ Two separate Flask applications, located in folders flask1 and flask2, were Dock
 
   templates: Created a templates folder containing an index.html file for the Flask application in flask2
 
-  Dockerfile: Created a Dockerfile for containerizing the Flask application in flask2
+### Dockerfile Configuration
+There is a Dockerfile located in each of the two folders with the following code
+```
+FROM python:3.7-alpine
+WORKDIR /app
+COPY . /app
+RUN pip install -r requirements.txt
+EXPOSE 5000
+CMD ["python", "app.py"]
+```
+
 
   
 
