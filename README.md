@@ -113,6 +113,12 @@ docker ps
 docker-compose down
 ```
 
+# 3. Role of Docker Compose and Key Differences from Using Docker Alone:
+
+Docker Compose makes it easy to manage many Docker containers at once. It uses a simple file to set up and run multiple services together. It allows you to define, configure, and run multiple services within a single YAML file, streamlining the process of setting up and deploying complex applications. This helps handle dependencies and settings for the whole application. It's like a blueprint for running complex applications with Docker, making it simple to use and share.
+
+A key difference between Docker and Docker Compose is the ease of reflecting local changes in the containerized application. With Docker Compose, changes made locally are automatically mirrored in Docker without the need to rebuild the image. In Part 1 with Docker alone, rebuilding was necessary for changes to take effect. 
+
 
 
   
