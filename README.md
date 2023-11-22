@@ -38,3 +38,7 @@ CMD ["python", "app.py"]
 - To see information about the running containers, including the container ID, run: docker ps
 - If you need to stop the running container, use the container ID in the following command: docker stop <container_id>
 - If you want to delete all Docker images, you can use the following command: docker system prune -a -f
+
+
+# 2. Multi-Container Setup with Docker Compose
+
