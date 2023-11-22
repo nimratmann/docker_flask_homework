@@ -10,7 +10,7 @@ Gaining hands-on experience in Dockerizing Flask applications, first individuall
 - Created an about.html file within the templates folder to represent a specific view within the Flask application.
 
 ### Dockerfile Configuration
-1. Developed a Dockerfile with the following configuration to containerize the Flask application:
+Developed a Dockerfile with the following configuration to containerize the Flask application:
 ```
 # Use the official Python 3.7 Alpine image as the base image
 FROM python:3.7-alpine
