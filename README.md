@@ -44,7 +44,7 @@ CMD ["python", "app.py"]
 ### Setting up the Application and Folder Structure 
 Two separate Flask applications, located in folders flask1 and flask2, were Dockerized along with their respective templates, app.py, requirements.txt, and Dockerfile.
 - Flask1
-
+  
   app.py: Developed the main app.py Flask application script for the first container
 
   requirements.txt: Defined the Python dependencies for the Flask application in flask1
@@ -55,7 +55,7 @@ Two separate Flask applications, located in folders flask1 and flask2, were Dock
 
   
 - Flask2
-- 
+  
   app.py: Developed the main app.py Flask application script for the first container
 
   requirements.txt: Defined the Python dependencies for the Flask application in flask2
