@@ -71,6 +71,30 @@ EXPOSE 5000
 CMD ["python", "app.py"]
 ```
 
+### Dockerizing with Docker Compose
+Created a docker-compose.yml file in the root directory of my Part2 folder.
+Define a service for your Flask application:
+```
+version: '3'           # Specifies the version of the Docker Compose file
+
+services:              # Defines services that constitute the application (flask_app_1, flask_app_2)
+  
+  flask_app_1:         # Service name for the first Flask application
+    build: ./flask1    # Specifies the location of the Dockerfile for building the Docker image
+    ports:             # Maps the port on the host to the port on the container
+      - "5001:5000"
+    volumes:           # Maps the directory of the application in the container
+      - ./flask1:/app
+
+  flask_app_2:         # Service name for the second Flask application
+    build: ./flask2    # Specifies the location of the Dockerfile for building the Docker image
+    ports:             # Maps the port on the host to the port on the container
+      - "5002:5000"
+    volumes:           # Maps the directory of the application in the container
+      - ./flask2:/app
+```
+
+
 
   
 
